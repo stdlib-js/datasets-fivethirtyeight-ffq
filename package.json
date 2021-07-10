@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/datasets-fivethirtyeight-ffq",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "FiveThirtyEight reader responses to a food frequency questionnaire (FFQ).",
   "license": "Apache-2.0",
   "author": {
