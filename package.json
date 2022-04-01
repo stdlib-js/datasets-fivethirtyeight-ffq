@@ -1,0 +1,42 @@
+{
+  "name": "@stdlib/datasets-fivethirtyeight-ffq",
+  "version": "0.0.0",
+  "description": "FiveThirtyEight reader responses to a food frequency questionnaire (FFQ).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/datasets-fivethirtyeight-ffq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "538",
+    "fivethirtyeight",
+    "nutrition",
+    "diet",
+    "dietary",
+    "p-hacking",
+    "data mining",
+    "ffq",
+    "survey",
+    "food",
+    "frequency",
+    "questionnaire",
+    "noise",
+    "correlations",
+    "correlation",
+    "spurious"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
