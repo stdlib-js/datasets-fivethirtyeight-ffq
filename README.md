@@ -24,45 +24,9 @@ limitations under the License.
 
 > [_FiveThirtyEight_][fivethirtyeight-nutrition-studies] reader responses to a food frequency questionnaire ([FFQ][ffq]).
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/datasets-fivethirtyeight-ffq
-```
 
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var dataset = require( '@stdlib/datasets-fivethirtyeight-ffq' );
-```
-
-#### dataset()
-
-Returns [_FiveThirtyEight_][fivethirtyeight-nutrition-studies] reader responses to a food frequency questionnaire ([FFQ][ffq]).
-
-```javascript
-var data = dataset();
-// returns [ {...}, ... ]
-```
-
-</section>
-
-<!-- /.usage -->
 
 <section class="notes">
 
@@ -74,55 +38,13 @@ var data = dataset();
 
 <!-- /.examples -->
 
-<section class="examples">
 
-## Examples
 
-<!-- eslint no-undef: "error" -->
 
-```javascript
-var bifurcateBy = require( '@stdlib/utils-bifurcate-by' );
-var inmap = require( '@stdlib/utils-inmap' );
-var ttest2 = require( '@stdlib/stats-ttest2' );
-var dataset = require( '@stdlib/datasets-fivethirtyeight-ffq' );
-
-function predicate( v ) {
-    return ( v.diabetes === 1 );
-}
-
-function createAccessor( field ) {
-    return accessor;
-
-    function accessor( v ) {
-        return v[ field ];
-    }
-}
-
-// Retrieve the data:
-var data = dataset();
-
-// Split the data into two groups based on whether a respondent has diabetes:
-var groups = bifurcateBy( data, predicate );
-
-// For each group, extract the frequency of green salad consumption:
-var mapFcn = createAccessor( 'greensaladfreq' );
-var g1 = inmap( groups[ 0 ].slice(), mapFcn );
-var g2 = inmap( groups[ 1 ].slice(), mapFcn );
-
-// Perform a two-sample two-sided Student's t-test to determine if green salad consumption is different between the two groups:
-var results = ttest2( g1, g2 );
-console.log( results.print() );
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -140,7 +62,7 @@ npm install -g @stdlib/datasets-fivethirtyeight-ffq-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: fivethirtyeight-ffq [options]
@@ -157,13 +79,13 @@ Options:
 
 <section class="notes">
 
-### Notes
+## Notes
 
 -   Data is written to `stdout` as comma-separated values ([CSV][csv]), where the first line is a header line.
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ fivethirtyeight-ffq
@@ -201,6 +123,11 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 <section class="related">
 
+## See Also
+
+-   <span class="package-name">[`@stdlib/datasets-fivethirtyeight-ffq`][@stdlib/datasets-fivethirtyeight-ffq]</span><span class="delimiter">: </span><span class="description">fiveThirtyEight reader responses to a food frequency questionnaire (FFQ).</span>
+
+
 </section>
 
 <!-- /.related -->
@@ -218,7 +145,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -236,8 +163,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-fivethirtyeight-ffq.svg
-[npm-url]: https://npmjs.org/package/@stdlib/datasets-fivethirtyeight-ffq
+[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-fivethirtyeight-ffq-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/datasets-fivethirtyeight-ffq-cli
 
 [test-image]: https://github.com/stdlib-js/datasets-fivethirtyeight-ffq/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/datasets-fivethirtyeight-ffq/actions/workflows/test.yml?query=branch:main
