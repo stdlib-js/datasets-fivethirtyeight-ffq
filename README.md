@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dataset from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-fivethirtyeight-ffq@esm/index.mjs';
+import dataset from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-fivethirtyeight-ffq@v0.1.0-esm/index.mjs';
 ```
 
 #### dataset()
@@ -83,7 +83,7 @@ var data = dataset();
 import bifurcateBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@esm/index.mjs';
 import inmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inmap@esm/index.mjs';
 import ttest2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-ttest2@esm/index.mjs';
-import dataset from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-fivethirtyeight-ffq@esm/index.mjs';
+import dataset from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-fivethirtyeight-ffq@v0.1.0-esm/index.mjs';
 
 function predicate( v ) {
     return ( v.diabetes === 1 );
