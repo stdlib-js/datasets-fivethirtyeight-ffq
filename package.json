@@ -58,7 +58,7 @@
     "@stdlib/fs-write-file": "^0.1.0",
     "@stdlib/process-exec-path": "^0.1.0",
     "@stdlib/regexp-eol": "^0.1.0",
-    "@stdlib/stats-ttest2": "^0.0.7",
+    "@stdlib/stats-ttest2": "^0.1.0",
     "@stdlib/utils-bifurcate-by": "^0.1.0",
     "@stdlib/utils-inmap": "^0.1.0",
     "proxyquire": "^2.0.0",
