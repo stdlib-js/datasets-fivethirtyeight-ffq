@@ -85,7 +85,7 @@ var data = dataset();
 
 </section>
 
-<!-- /.examples -->
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -174,6 +174,10 @@ Options:
 
 -   Data is written to `stdout` as comma-separated values ([CSV][csv]), where the first line is a header line.
 
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ### Examples
@@ -252,8 +256,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-fivethirtyeight-ffq.svg
 [npm-url]: https://npmjs.org/package/@stdlib/datasets-fivethirtyeight-ffq
 
-[test-image]: https://github.com/stdlib-js/datasets-fivethirtyeight-ffq/actions/workflows/test.yml/badge.svg?branch=v0.2.3
-[test-url]: https://github.com/stdlib-js/datasets-fivethirtyeight-ffq/actions/workflows/test.yml?query=branch:v0.2.3
+[test-image]: https://github.com/stdlib-js/datasets-fivethirtyeight-ffq/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/datasets-fivethirtyeight-ffq/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-fivethirtyeight-ffq/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-fivethirtyeight-ffq?branch=main
